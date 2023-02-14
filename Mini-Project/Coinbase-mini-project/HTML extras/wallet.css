@@ -1,0 +1,13 @@
+.card {
+    width: 200px;
+    margin: 0px;
+    font-size: medium;
+}
+
+.container {
+    width: 1500px;
+}
+
+.row {
+    position: flex;
+}

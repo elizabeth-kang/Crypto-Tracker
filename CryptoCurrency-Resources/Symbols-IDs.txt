@@ -1,0 +1,3 @@
+BNB,BUSD,BTC,ADA,DOGE,ETH,dot,SOL,USDT,USDC,xrphalf
+
+binancecoin,binance-usd,bitcoin,cardano,dogecoin,ethereum,polkadot,solana,tether,usd-coin

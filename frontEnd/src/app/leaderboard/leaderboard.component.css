@@ -1,0 +1,16 @@
+button{
+    width: 60vw;
+    height: 8vh;
+    background-color: brown;
+    font-size: 15px ;
+}
+#first{
+    height: 10vh;
+    background-color: gold;
+    font-size: 20px ;
+}
+#second{
+    height: 9vh;
+    background-color: silver;
+    font-size: 17px;
+}

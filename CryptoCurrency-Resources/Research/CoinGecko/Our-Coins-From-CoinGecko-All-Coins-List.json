@@ -1,0 +1,52 @@
+[
+  {
+    "id": "binancecoin",
+    "symbol": "bnb",
+    "name": "BNB"
+  },
+  {
+    "id": "binance-usd",
+    "symbol": "busd",
+    "name": "Binance USD"
+  },
+  {
+    "id": "bitcoin",
+    "symbol": "btc",
+    "name": "Bitcoin"
+  },
+  {
+    "id": "cardano",
+    "symbol": "ada",
+    "name": "Cardano"
+  },
+  {
+    "id": "dogecoin",
+    "symbol": "doge",
+    "name": "Dogecoin"
+  },
+  {
+    "id": "ethereum",
+    "symbol": "eth",
+    "name": "Ethereum"
+  },
+  {
+    "id": "polkadot",
+    "symbol": "dot",
+    "name": "Polkadot"
+  },
+  {
+    "id": "solana",
+    "symbol": "sol",
+    "name": "Solana"
+  },
+  {
+    "id": "tether",
+    "symbol": "usdt",
+    "name": "Tether"
+  },
+  {
+    "id": "usd-coin",
+    "symbol": "usdc",
+    "name": "USD Coin"
+  }
+]

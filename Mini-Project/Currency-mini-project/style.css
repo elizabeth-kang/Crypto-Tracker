@@ -1,0 +1,63 @@
+.background_image {
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(image1.png);
+    background-size: cover;
+}
+
+#card {
+ margin-left: 75px;
+ margin-top: 110px;
+ border-color: rgb(35, 26, 13);
+}
+
+.card-header {
+    background-color:#14145e ;
+    color: white;
+}
+
+.card-body {
+    background-color: white;
+    color:#10103f
+}
+
+#fiat {
+    font-size: 18px;
+}
+
+#crypto {
+    font-size: 18px;
+}
+
+.label1 {
+    font-size: 18px;
+}
+
+.label2 {
+    font-size: 18px;
+}
+
+#greybttn {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#header1 {
+    color: #2e2ebe;
+}
+
+#header1 > #result-crypt{
+    color: black;
+}
+
+#header2 {
+    color: #2e2ebe;
+}
+
+#header2 > #result-amount {
+color:black;
+}
+
+#header2 > #result-fiat {
+    color:black;
+    }

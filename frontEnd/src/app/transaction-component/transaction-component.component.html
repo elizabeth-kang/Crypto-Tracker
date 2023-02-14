@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <div class="card text-center" id="card" style="width: 23rem;">
+        <div class="card-body">
+            <main>
+            <div class="content">
+                <h1>Buy and Sell!</h1>
+                <div><p>Use this form to trade your Cryptocurreny!</p></div>
+                <form>
+                    <label class="label2" for="crypto">Select your Cryptocurrency:</label>
+                    <select #crypto (change)="selectedCurrency(crypto.value)" name="Cryptocurrency" class="form-control">
+                        <option value="BTC">Bitcoin</option>
+                        <option value="ETH">Ethereum</option>
+                        <option value="USDT">Tether</option>
+                        <option value="USDC">USD Coin</option>
+                        <option value="ETH2">Ethereum2</option>
+                        <option value="DOGE">DogeCoin</option>
+                        <option value="BUSD">Binance USD</option>
+                        <option value="ADA">Cardano</option>
+                        <option value="SOL">Solana</option>
+                        <option value="DOT">Polkadot</option>
+                    </select>
+                </form>
+                <div>
+                    <!-- <button type="button" class="btn btn-secondary" id="buybttn" (click)="buyCrypto('buy')" class="button">Buy</button> -->
+                    <button type="button" class="btn btn-secondary" id="buybttn" (click)="apicall()" class="button">Buy</button>
+                    <!-- <button type="button" class="btn btn-secondary" id="sellbttn" (click)="sellCrypto('sell')" class="button">Sell</button> -->
+                    <button type="button" class="btn btn-secondary" id="sellbttn" (click)="apicall()" class="button">Sell</button>
+                    <button type="button" class="btn btn-secondary" id="sell3bttn" (click)="apicall()" class="button">Test API call</button>
+    <!-- document.getElementById('crypto').value -->
+                </div>
+                <div class="row">
+                    <br>
+                    <section class = "result-container" *ngIf="currencyData">
+                        <h4 id="chosen_currency"> You have chosen {{selectedCrypto}} to transact.</h4>
+                        <h4 id="result">Result of Transaction</h4>
+                        <h5 id="header1">Cryptocurrency: <span id="result-crypt">{{currencyData.data.base}}</span></h5>
+                        
+                        <h5 id="header2">Worth: <span id="result-amount">{{currencyData.data.amount}}</span> <span id="result-fiat"></span></h5>
+                        
+                    </section>
+                </div> 
+            </div>
+        </main>
+    </div>
+

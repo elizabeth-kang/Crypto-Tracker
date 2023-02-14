@@ -1,0 +1,46 @@
+<div class="login-component">
+    <div class="login-box">
+        <div class="welcome-text">
+            <div>Welcome to Crypto-Track</div>
+            <p>Please Enter your Email and Password</p>
+        </div>
+
+    <div class="form-group">
+
+        <label for="email">Email</label>
+        <input class="form-control" type="text" name="email" id="email" [formControl]="email">
+        
+        <div class="form-error">
+            <div *ngIf="email.touched && email.errors?.['required']">
+                Email is required
+            </div>
+            <div *ngIf="loginFailed">
+                Email does not exist, please try again
+            </div>
+            <div *ngIf="registerFailed">
+                {{errorMsg}}
+            </div>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input class="form-control" type="text" name="password" id="password" [formControl]="password">
+        </div>
+        <div class="form-error">
+            <div *ngIf="password.touched && password.errors?.['required']">
+                Password is required
+            </div>
+            <div *ngIf="loginFailed">
+                Password does not exist, please try again
+            </div>
+            <div *ngIf="registerFailed">
+                {{errorMsg}}
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button [disabled]="password.dirty && password.invalid" [disabled]="email.dirty && email.invalid" mat-raised-button color="primary" class="login-btn" (click)="loginHandler()">{{modes[mode]}}</button>
+    </div>
+
+    <p>or <span class="switch-btn" *ngIf="mode === 'login'" (click)="switchMode('register')">Register</span><span *ngIf="mode === 'register'" class="switch-btn" (click)="switchMode('login')">Log In</span> here</p>
+</div>
+</div>

@@ -1,0 +1,54 @@
+<div class="icon-btn">
+    <img src={{images[imageId]}} alt="">
+</div>
+<div class="container" *ngIf="this.vis===true">
+    <div class="img-holder">
+        <p>ID: 1</p>
+        <img src="../../assets/person-outline.svg">
+        <p>ID: 2</p>
+        <img src="../../assets/sid.png">
+        <p>ID: 3</p>
+        <img src="../../assets/krisholl.png">
+        <p>ID: 4</p>
+        <img src="../../assets/bunny.png">
+        <p>ID: 5</p>
+        <img src="../../assets/bin.png">
+        <p>ID: 6</p>
+        <img src="../../assets/cat.png">
+        <p>ID: 7</p>
+        <img src="../../assets/doge.png">
+        <p>ID: 8</p>
+        <img src="../../assets/hamster.png">
+        <p>ID: 9</p>
+        <img src="../../assets/tigger.png">
+        <p>ID: 10</p>
+        <img src="../../assets/turtle.png">
+    </div>
+    <div class="form">
+        <form action="">
+            <label for="imgId">Image ID:</label>
+            <select name="imgId" id="imgId" class="form-control">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">4</option>
+                <option value="4">5</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="7">8</option>
+                <option value="8">9</option>
+                <option value="9">10</option>
+            </select>
+        </form>
+        <button (click)="changeImage()" class="button">Select</button>
+    </div>
+</div>  
+<div class="card">
+    <div class="img-container">
+        <img src={{images[imageId]}} alt="John" style="width:30%">
+    </div>
+    <h2>{{email}}</h2>
+    <div style="margin: 24px 0;">
+    </div>
+    <p><button (click)="show()">Change Picture</button></p>
+</div>

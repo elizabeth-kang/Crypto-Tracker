@@ -1,0 +1,93 @@
+<body>
+    c
+    <br>
+    <br>
+
+
+
+    <div class="card" id="card" style="width: 50rem;">
+        <div class="card-header">
+           <h2>Dashboard</h2>
+        </div>
+        <div class="card-body">
+         <main>
+            <div>
+                <h1>Quick Trade!</h1>
+                <div><p>Use the form below to convert a fiat currency to a Cryptocurreny!</p></div>
+            </div>
+                <div class="row">
+                    <div class="col-4">
+                        <form action="">
+                            <label class="label1" for="fiat">Fiat Currency:</label>
+                            <select name="fiatCurrency" id="fiat" class="form-control" style="width:auto">
+                                <option value="USD">US Dollar</option>
+                                <option value="EUR">Euro</option>
+                                <option value="JPY">Japanese Yen</option>
+                                <option value="GBP">British Pound</option>
+                                <option value="AUD">Australian Dollar</option>
+                                <option value="CAD">Canadian Dollar</option>
+                                <option value="CHF">Swiss Franc</option>
+                                <option value="CNY">Chinese Renminbi Yuan</option>
+                                <option value="HKD">Hong Kong Dollar</option>
+                                <option value="NZD">New Zealand Dollar</option>
+                            </select>
+                        </form>
+                    </div>
+                <div class="col-4">
+                    <form>
+                        <label class="label2" for="crypto">Cryptocurrency:</label>
+                        <select name="Cryptocurrency" id="currency_pair" class="form-control" style="width: auto">
+                            <option value="BTC-USD">Bitcoin/USD</option>
+                            <option value="ETH-USD">Ethereum/USD</option>
+                            <option value="USDT-USD">Tether/USD</option>
+                            <option value="USDC-USD">USD Coin/USD</option>
+                            <option value="ETH2-USD">Ethereum2/USD</option>
+                            <option value="DOGE-USD">DogeCoin/USD</option>
+                            <option value="BUSD-USD">Binance USD</option>
+                            <option value="ADA-USD">Cardano/USD</option>
+                            <option value="SOL-USD">Solana/USD</option>
+                            <option value="DOT-USD">Polkadot/USD</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <br>
+                <div class="input-group mb-3">
+                    <button type="button" class="btn btn-secondary" id="BUYbutton" onclick="getPrice(document.getElementById('fiat').value,document.getElementById('crypto').value)" class="button">BUY</button>
+                    <input type="text" class="form-control-md" id="amountBar" placeholder="Amount">
+                    <button type="button" class="btn btn-secondary" id="SELLbutton" onclick="getPrice">SELL</button>
+                </div>
+                <div>
+                    <section class = "result-container">
+                        <h5 id="header1">Cryptocurrency: <span id="result-crypt"></span></h5>
+                        
+                        <h5 id="header2">Worth: <span id="result-amount"></span> <span id="result-fiat"></span></h5>
+                        
+                    </section>
+                </div> 
+            
+        </div>
+    </div>
+        </main>
+    
+        <br>
+        <br>
+        <footer>
+            
+            <div class="card-footer text-muted">
+                <p class="creators">Created by 
+                    <a href="https://github.com/terriblea" target="_blank" rel="noopener noreferrer">Kishan, </a>
+                    <a href="https://github.com/noonmoon101" target="_blank" rel="noopener noreferrer">Kevion, </a>
+                    <a href="https://github.com/oddishhorde" target="_blank" rel="noopener noreferrer">Chris, </a>
+                    <a href="https://github.com/kangelizabeth" target="_blank" rel="noopener noreferrer">Elizabeth, </a>
+                    <a href="https://github.com/kangelizabeth" target="_blank" rel="noopener noreferrer">Autumn, </a>
+                </p>
+              </div>
+            </div>
+          </div>
+    </footer>    
+</body>
+<footer>
+
+<script src="script.js"></script>
+</html>

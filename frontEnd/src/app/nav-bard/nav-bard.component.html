@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item" *ngIf="router.url !== '/dashboard'">
+                    <a href="#" class="nav-link">
+                        <span class="icon"><img src="../../assets/home-outline.svg" width="30px" alt="home"></span>
+                        <span class="text">DashBoard</span>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="router.url !== '/assets'">
+                    <a href="#wallet" class="nav-link">
+                        <span class="icon"><img src="../../assets/logo-bitcoin.svg" width="30px" alt=""></span>
+                        <span class="text">My Wallet</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#market" class="nav-link" *ngIf="router.url !== '/market'">
+                        <span class="icon"><img src="../../assets/storefront-outline.svg" width="30px" alt=""></span>
+                        <span class="text">Market</span>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="router.url !== '/leaderboard'">
+                    <a href="#leaderboard" class="nav-link">
+                        <span class="icon"><img src="../../assets/list-circle-outline.svg" width="30px" alt=""></span>
+                        <span class="text">LeaderBoard</span>
+                    </a>
+                </li>
+                <li>
+                    <span class="text dm">DarkMode</span>
+                    <div class="icon">
+                        <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

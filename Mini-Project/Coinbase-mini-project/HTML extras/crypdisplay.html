@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="crypdisplay.css">
+    <script src="crypdisplay.js"></script>
+    <script>
+        function timedCount() {
+            setInterval(priceFetcher, 31000);
+        }
+        if(window.Worker) {
+            priceFetcher();
+            timedCount();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Converter</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+            <a href="#" class="btn">LogOut</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="content">
+            <h1>BUY & SELL <Span>Crypto</Span></h1>
+            <p>More Text?</p>
+            <button class="btn" onclick="priceFetcher()">RANDOM BUTTON!</button>
+        </div>
+    <div class="coin-list">
+        <div class="coin">
+            <img src="images/logo.png">
+                <div>
+                    <p>Bitcoin</p>
+                    <h3>$<span id="BTC"></span> in <span id="BTCCurrency"></span></h3>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>Ethereum</p>
+                    <h3>$<span id="ETH"></span> in <span id="ETHCurrency"></span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="coin-list">
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>Tether</p>
+                    <h3>$<span id="USDT"></span> in <span id="USDTCurrency"></span></h3>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>USD Coin</p>
+                    <h3>$<span id="USDC"></span> in <span id="USDCCurrency"></span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="coin-list">
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>Ethereum2</p>
+                    <h3>$<span id="ETH2"></span> in <span id="ETH2Currency"></span></h3>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>DogeCoin</p>
+                    <h3>$<span id="DOGE"></span> in <span id="DOGECurrency"></span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="coin-list">
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>Binance USD</p>
+                    <h3>$<span id="BUSD"></span> in <span id="BUSDCurrency"></span></h3>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>Cardano</p>
+                    <h3>$<span id="ADA"></span> in <span id="ADACurrency"></span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="coin-list">
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>Solana</p>
+                    <h3>$<span id="SOL"></span> in <span id="SOLCurrency"></span></h3>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="images/logo.png">
+                <div>
+                    <p>Polkadot</p>
+                    <h3>$<span id="DOT"></span> in <span id="DOTCurrency"></span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="crypdisplay.js"></script>
+</html>

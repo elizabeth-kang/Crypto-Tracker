@@ -1,0 +1,129 @@
+*{
+    position: relative;
+    z-index: 1 !important;
+}
+.icon-btn{
+    float: right;
+    width: 40px;
+    margin:10px 50px 10px 10px;
+    padding: 0;
+    height:40px;
+    align-items: center;
+}
+.icon-btn img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.card {
+    position:absolute;
+    top:60px;
+    right:-80px;
+    float: right;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    z-index: 1;
+    text-align: center;
+    font-family: arial;
+    background-color: #fff;
+    margin-top: -15px;
+  }
+  
+  .img-container {
+    background-color: lightgrey;
+  }
+.img-container img{
+    margin: 15px;
+    border-radius: 50%;
+}
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .icon-btn:hover ~ .card{
+    display: block;
+  }
+  .card:hover{
+    display: block;
+  }
+  .container{
+    margin: 0;
+    padding: 0;
+
+  background-color:  rgba(128, 128, 128, 0.772);
+  display: block;
+  align-items: center;
+}
+.img-holder{
+  position:absolute;
+  right:700px;
+  top:200px;
+  width: 160px;
+  height: 400px;
+  border: 4px solid blue;
+  background-color: #eee;
+  margin-left:auto;
+  overflow-y: auto;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.img-holder img{
+  margin: 15px;
+  border-radius: 50%;
+  width:100px;
+}
+.img-holder p{
+  margin: 15px;
+}
+.form{
+  position:absolute;
+  right:300px;
+  top:200px;
+  background-color: #eee;
+  width: 400px;
+  height: 400px;
+  border: 4px solid red;
+  margin-right: auto;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.form form{
+  margin: 150px 50px 10px 50px;
+  font-size: 24px;
+}
+.form option{
+  font-size: 24px;
+}
+.form select{
+  font-size: 24px;
+}
+.form button{
+  margin-left: 40px;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100px;
+  background-color: rgb(255, 15, 15);
+}
+.form button:hover{
+  background-color: rgb(212, 14, 14);
+}
